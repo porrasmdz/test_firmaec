@@ -1,0 +1,8 @@
+from .test_001_desk_validatecert import DeskValidateCertExpired as Test001
+from .test_002_desk_validatecert import DeskValidateCertRevoked as Test002
+from .test_003_desk_validatecert import DeskValidateCertExpiredRevoked as Test003
+from .test_004_desk_validatecert import DeskValidateCertToExpire as Test004
+from .test_005_desk_validatecert import DeskValidateCertValid as Test005
+from .test_006_desk_validatecert import DeskValidateCertAutogen as Test006
+from .test_007_desk_validatecert import DeskValidateCertExtense as Test007
+from .test_008_desk_validatecert import DeskValidateCertNested as Test008

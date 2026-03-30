@@ -1,0 +1,18 @@
+{
+  "Test Class Template": {
+    "prefix": "tst",
+    "body": [
+      "class Test${1:016}(DeskSignDoc):",
+      "    def __init__(self, os_type: OSTypes, config):",
+      "        super().__init__(",
+      "            code_name=\"${2}\",",
+      "            name=\"Firmar ${3:Nombre del test}\",",
+      "            cert_path=CERTIFICATES.${4:VALID_CERT},",
+      "            cert_password=${5:DEFAULT_CERTS_PASSWORD},",
+      "            doc_path=TEST_FILES.${6:DOC_001},",
+      "            os_type=os_type, config=config)",
+      ""
+    ],
+    "description": "Crear clase de test DeskSignDoc"
+  }
+}
