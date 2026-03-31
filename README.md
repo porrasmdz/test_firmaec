@@ -26,13 +26,23 @@ PREPARACION DE ENTORNO:
     - Agregar chrome, firefox, adobe acrobat reader, safari al path
 
 SUPUESTOS:
+
     chrome, firefox, adobe acroba y sfari estan en el PATH del sistema MENOS MAC
 
     La firma debe entrar en un cuadro de 215x120 pixeles
-    Por caducar es < 24 horas
-    Nombre muy largo > 200 caracteres
+    
+    El cuadro rojo es el marco donde se prueba que la firma se ubique en el lugar elegido y es 
+    GARANTÍA de que la firma se ubica donde se elige o no.
+
+    El cuadro azul solo es usado para que el software de automatización ubique un lugar para refirmar los documentos para las pruebas pero NO ES GARANTÍA de que la firma deba estar dentro del cuadro AZUL.
+
+    Por caducar es < 24 horas y debido a la naturaleza de esta firma se asume que en cada prueba el certificado to_expire siempre tiene una validez pronta a caducar, dentro de las proximas 24 horas o menos de la prueba realizada.
+
+    Nombre muy largo = Mayor o igual a 200 caracteres
+    
     Version actual de word en 28/03/2026 -> https://learn.microsoft.com/en-us/officeupdates/update-history-microsoft365-apps-by-date
-        Word Version 2603 - Build 19822.20114
+        Word Version 2603 - Build 19822.2011
+        4
     Generacion del certificado autogenerado:
         - Alternativamente se creo con OpenSSL la version autogen.p12 para pruebas
             $openssl genrsa -out key.pem 2048
